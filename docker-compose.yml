@@ -105,6 +105,16 @@ services:
     networks:
       - spark-network
 
+  jupyter:
+    image: jupyter/pyspark-notebook
+    container_name: jupyter
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    networks:
+      - spark-network
+      
 networks:
   spark-network:
     driver: bridge
