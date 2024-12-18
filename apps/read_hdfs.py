@@ -7,10 +7,10 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Path to the CSV in HDFS
-hdfs_path = "hdfs://namenode:9000/user/data/tweets.csv"
+hdfs_path = "hdfs://namenode:9000/user/data/fraud.csv"
 
 # Read the CSV into a DataFrame
 df = spark.read.csv(hdfs_path, header=True, inferSchema=True)
 
 # Show the DataFrame
-df.show()
+df.head(5)

@@ -74,7 +74,7 @@ docker exec -it namenode hdfs dfs -mkdir -p /user/data
 2. Upload the CSV file (e.g., tweets.csv) from the mounted /tmp/data folder into the newly created HDFS directory:
 
 ```bash
-docker exec -it namenode hdfs dfs -put /tmp/data/tweets.csv /user/data/
+docker exec -it namenode hdfs dfs -put /tmp/data/fraud.csv /user/data/
 ```
 
 3. Verify that the file was uploaded successfully:
