@@ -11,8 +11,8 @@ Before you begin, ensure that you have the following installed:
 Clone the repository to your local machine:
 
 ```bash
-git clone git@github.com:same-ou/spark-hdfs-ml.git
-cd spark-hdfs-ml 
+git clone git@github.com:oussamazrx/hadoop-sparkml-docker.git
+cd hadoop-sparkml-docker
 ```
 ## Step 2: Set Up Docker Containers with Docker Compose
 This project uses Docker Compose to set up the Spark Master, Spark Worker, HDFS (NameNode and DataNode) containers. To start the containers, follow these steps:
